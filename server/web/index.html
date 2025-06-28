@@ -129,7 +129,8 @@
             }
             
             // print sorted list
-            let sortedDevices = deviceDB.sort((c1, c2) => (c1.name > c2.name) ? 1 : (c1.name < c2.name) ? -1 : 0);
+            //let sortedDevices = deviceDB.sort((c1, c2) => (c1.name > c2.name) ? 1 : (c1.name < c2.name) ? -1 : 0);
+            let sortedDevices = deviceDB.sort((c1, c2) => (c1.ip > c2.ip) ? 1 : (c1.ip < c2.ip) ? -1 : 0);
             let rownum = 1;
             output = "<table><thead>\n<tr>\n<th>#</th><th>Device Name</th><th>Device ID</th>" +
                 "<th>IP Address</th><th>Version</th><th>Control</th>\n</tr></thead>\n<tbody>";
